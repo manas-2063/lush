@@ -49,7 +49,7 @@ fbks=('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.fac
 android_version = subprocess.check_output('getprop ro.build.version.release',shell=True).decode('utf-8').replace('\n','')
 andd=subprocess.check_output('getprop ro.product.brand',shell=True).decode('utf-8').replace('\n','')
 model = subprocess.check_output('getprop ro.product.model',shell=True).decode('utf-8').replace('\n','')
-carr=subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[1].replace('\n','')
+#carr=subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[1].replace('\n','')
 build = subprocess.check_output('getprop ro.build.id',shell=True).decode('utf-8').replace('\n','')
 
 device = {
